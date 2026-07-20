@@ -2,44 +2,44 @@ import { useParams, Link } from 'react-router-dom';
 
 const projects = {
   'pipeline-big-data-municipalidades': {
-    title: 'Pipeline Big Data — Municipalidades del Perú',
+    title: 'Pipeline Big Data \u2014 Municipalidades del Per\u00fa',
     description:
-      'Proyecto individual del curso de Big Data. Diseño de un pipeline de datos por capas (bronze, silver, gold) sobre un dataset de municipalidades peruanas.',
+      'Proyecto individual del curso de Big Data. Dise\u00f1o de un pipeline de datos por capas (bronze, silver, gold) sobre un dataset de municipalidades peruanas.',
     longDescription: [
-      'Pipeline ETL con arquitectura medallón (bronze → silver → gold) implementado con Apache Spark y Python.',
+      'Pipeline ETL con arquitectura medall\u00f3n (bronze \u2192 silver \u2192 gold) implementado con Apache Spark y Python.',
       'Entorno de desarrollo completamente containerizado con Docker y Jupyter Notebooks.',
-      'Visualización final de datos procesados mediante dashboards en Power BI.',
-      'Dataset real de municipalidades peruanas con indicadores de gestión.',
+      'Visualizaci\u00f3n final de datos procesados mediante dashboards en Power BI.',
+      'Dataset real de municipalidades peruanas con indicadores de gesti\u00f3n.',
     ],
     technologies: ['Python', 'Apache Spark', 'Docker', 'Jupyter', 'Power BI', 'ETL'],
     github_url: 'https://github.com/PedroQC17/arquitecture_medallion_municipalidades',
     live_url: null,
-    image: 'https://placehold.co/800x400/1f2937/10b981?text=Pipeline+Big+Data',
+    image: '/pipeline-big-data.png',
   },
   'sistema-interoperabilidad-hospitales': {
     title: 'Sistema de Interoperabilidad de Hospitales',
     description:
-      'Sistema para el intercambio de información clínica entre hospitales, usando React en el frontend y Django en el backend con microservicios.',
+      'Sistema para el intercambio de informaci\u00f3n cl\u00ednica entre hospitales, usando React en el frontend y Django en el backend con microservicios.',
     longDescription: [
-      'Frontend SPA desarrollado con React, ofreciendo una interfaz rápida y responsiva para el personal médico.',
+      'Frontend SPA desarrollado con React, ofreciendo una interfaz r\u00e1pida y responsiva para el personal m\u00e9dico.',
       'Backend con Django REST Framework y arquitectura de microservicios para escalabilidad.',
       'API REST documentada para la interoperabilidad entre distintos sistemas hospitalarios.',
-      'Base de datos PostgreSQL con modelo de datos normalizado para información clínica.',
+      'Base de datos PostgreSQL con modelo de datos normalizado para informaci\u00f3n cl\u00ednica.',
     ],
     technologies: ['React', 'Django', 'DRF', 'PostgreSQL', 'Docker', 'Microservicios'],
     github_url: 'https://github.com/PedroQC17/sistema-interoperabilidad-hospitales',
     live_url: null,
-    image: 'https://placehold.co/800x400/1f2937/10b981?text=Interoperabilidad+Hospitales',
+    image: '/interoperabilidad-hospitales.png',
   },
   'rutas-emergencia-ambulancias': {
     title: 'Sistema de Rutas de Emergencia para Ambulancias',
     description:
-      'Sistema inteligente para encontrar las rutas óptimas de ambulancias hacia hospitales de emergencia en Lima Metropolitana, comparando tres algoritmos clásicos de teoría de grafos.',
+      'Sistema inteligente para encontrar las rutas \u00f3ptimas de ambulancias hacia hospitales de emergencia en Lima Metropolitana, comparando tres algoritmos cl\u00e1sicos de teor\u00eda de grafos.',
     longDescription: [
-      'Implementación y comparación de tres algoritmos: BFS (minimiza intersecciones), Dijkstra (menor distancia) y A* (búsqueda heurística).',
-      'Grafos de red vial reales obtenidos de OpenStreetMap, considerando 51 hospitales de categoría II y III en 16 distritos de Lima.',
-      'Visualización geoespacial de rutas calculadas y métricas comparativas entre algoritmos.',
-      'Análisis de performance: tiempo de ejecución, nodos expandidos y optimalidad de cada ruta.',
+      'Implementaci\u00f3n y comparaci\u00f3n de tres algoritmos: BFS (minimiza intersecciones), Dijkstra (menor distancia) y A* (b\u00fasqueda heur\u00edstica).',
+      'Grafos de red vial reales obtenidos de OpenStreetMap, considerando 51 hospitales de categor\u00eda II y III en 16 distritos de Lima.',
+      'Visualizaci\u00f3n geoespacial de rutas calculadas y m\u00e9tricas comparativas entre algoritmos.',
+      'An\u00e1lisis de performance: tiempo de ejecuci\u00f3n, nodos expandidos y optimalidad de cada ruta.',
     ],
     technologies: ['Python', 'BFS', 'Dijkstra', 'A*', 'OpenStreetMap', 'OSMnx'],
     github_url: 'https://github.com/PedroQC17/Sistema-de-Rutas-de-Emergencia',
@@ -47,19 +47,19 @@ const projects = {
     image: '/rutas-emergencia.png',
   },
   'bi-emisiones-gei-peru': {
-    title: 'BI — Emisiones de Gases de Efecto Invernadero en Perú',
+    title: 'BI \u2014 Emisiones de Gases de Efecto Invernadero en Per\u00fa',
     description:
-      'Data warehouse para el análisis de emisiones GEI en Perú, integrando 4 fuentes internacionales con resolución geoespacial a nivel distrital.',
+      'Data warehouse para el an\u00e1lisis de emisiones GEI en Per\u00fa, integrando 4 fuentes internacionales con resoluci\u00f3n geoespacial a nivel distrital.',
     longDescription: [
-      'Integración de datos de Climate Trace, EDGAR, Climate Watch y FAOSTAT en un data warehouse unificado.',
-      'Procesos ETL diseñados con Pentaho Data Integration para limpieza, transformación y carga.',
-      'Modelado dimensional (esquema estrella) para consultas analíticas eficientes sobre emisiones GEI.',
-      'Dashboards interactivos en Power BI con visualización geoespacial a nivel distrital.',
+      'Integraci\u00f3n de datos de Climate Trace, EDGAR, Climate Watch y FAOSTAT en un data warehouse unificado.',
+      'Procesos ETL dise\u00f1ados con Pentaho Data Integration para limpieza, transformaci\u00f3n y carga.',
+      'Modelado dimensional (esquema estrella) para consultas anal\u00edticas eficientes sobre emisiones GEI.',
+      'Dashboards interactivos en Power BI con visualizaci\u00f3n geoespacial a nivel distrital.',
     ],
     technologies: ['Pentaho', 'Power BI', 'SQL', 'ETL', 'Data Warehouse', 'GIS'],
     github_url: 'https://github.com/PedroQC17/BI-aplicado-a-la-Generaci-n-de-Gases-de-Efecto-Invernadero-en-el-Per-',
     live_url: null,
-    image: 'https://placehold.co/800x400/1f2937/10b981?text=BI+Emisiones+GEI',
+    image: '/bi-emisiones-gei.png',
   },
 };
 

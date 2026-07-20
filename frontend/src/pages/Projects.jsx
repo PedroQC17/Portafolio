@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     slug: 'pipeline-big-data-municipalidades',
-    title: 'Pipeline Big Data — Municipalidades del Perú',
+    title: 'Pipeline Big Data \u2014 Municipalidades del Per\u00fa',
     description:
-      'Pipeline de datos por capas (bronze, silver, gold) sobre un dataset de municipalidades peruanas, usando Apache Spark, Python y Jupyter en Docker, con visualización final en Power BI.',
-    image: 'https://placehold.co/600x400/1f2937/10b981?text=Pipeline+Big+Data',
+      'Pipeline de datos por capas (bronze, silver, gold) sobre un dataset de municipalidades peruanas, usando Apache Spark, Python y Jupyter en Docker, con visualizaci\u00f3n final en Power BI.',
+    image: '/pipeline-big-data.png',
     technologies: ['Python', 'Apache Spark', 'Docker', 'Jupyter', 'Power BI'],
     github_url: 'https://github.com/PedroQC17/arquitecture_medallion_municipalidades',
     live_url: null,
@@ -15,8 +15,8 @@ const projects = [
     slug: 'sistema-interoperabilidad-hospitales',
     title: 'Sistema de Interoperabilidad de Hospitales',
     description:
-      'Sistema para el intercambio de información clínica entre hospitales, con frontend en React y backend en Django usando microservicios.',
-    image: 'https://placehold.co/600x400/1f2937/10b981?text=Interoperabilidad+Hospitales',
+      'Sistema para el intercambio de informaci\u00f3n cl\u00ednica entre hospitales, con frontend en React y backend en Django usando microservicios.',
+    image: '/interoperabilidad-hospitales.png',
     technologies: ['React', 'Django', 'DRF', 'PostgreSQL', 'Docker'],
     github_url: 'https://github.com/PedroQC17/sistema-interoperabilidad-hospitales',
     live_url: null,
@@ -25,7 +25,7 @@ const projects = [
     slug: 'rutas-emergencia-ambulancias',
     title: 'Sistema de Rutas de Emergencia para Ambulancias',
     description:
-      'Sistema inteligente de búsqueda de rutas óptimas para ambulancias en Lima Metropolitana, comparando BFS, Dijkstra y A* sobre grafos viales reales de OpenStreetMap. Considera 51 hospitales en 16 distritos.',
+      'Sistema inteligente de b\u00fasqueda de rutas \u00f3ptimas para ambulancias en Lima Metropolitana, comparando BFS, Dijkstra y A* sobre grafos viales reales de OpenStreetMap. Considera 51 hospitales en 16 distritos.',
     image: '/rutas-emergencia.png',
     technologies: ['Python', 'BFS', 'Dijkstra', 'A*', 'OpenStreetMap'],
     github_url: 'https://github.com/PedroQC17/Sistema-de-Rutas-de-Emergencia',
@@ -33,10 +33,10 @@ const projects = [
   },
   {
     slug: 'bi-emisiones-gei-peru',
-    title: 'BI — Emisiones de Gases de Efecto Invernadero en Perú',
+    title: 'BI \u2014 Emisiones de Gases de Efecto Invernadero en Per\u00fa',
     description:
-      'Data warehouse para el análisis de emisiones GEI en Perú, integrando 4 fuentes internacionales (Climate Trace, EDGAR, Climate Watch, FAOSTAT) con resolución geoespacial a nivel distrital.',
-    image: 'https://placehold.co/600x400/1f2937/10b981?text=BI+Emisiones+GEI',
+      'Data warehouse para el an\u00e1lisis de emisiones GEI en Per\u00fa, integrando 4 fuentes internacionales (Climate Trace, EDGAR, Climate Watch, FAOSTAT) con resoluci\u00f3n geoespacial a nivel distrital.',
+    image: '/bi-emisiones-gei.png',
     technologies: ['Pentaho', 'Power BI', 'SQL', 'ETL', 'Data Warehouse'],
     github_url: 'https://github.com/PedroQC17/BI-aplicado-a-la-Generaci-n-de-Gases-de-Efecto-Invernadero-en-el-Per-',
     live_url: null,
@@ -50,7 +50,7 @@ export default function Projects() {
         Mis <span className="text-emerald-400">proyectos</span>
       </h1>
       <p className="text-gray-400 mb-10 max-w-xl">
-        Proyectos académicos y personales donde aplico desarrollo web, big data
+        Proyectos acad\u00e9micos y personales donde aplico desarrollo web, big data
         e inteligencia de negocios.
       </p>
 
