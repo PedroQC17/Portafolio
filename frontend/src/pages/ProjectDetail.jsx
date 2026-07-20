@@ -44,7 +44,7 @@ const projects = {
     technologies: ['Python', 'BFS', 'Dijkstra', 'A*', 'OpenStreetMap', 'OSMnx'],
     github_url: 'https://github.com/PedroQC17/Sistema-de-Rutas-de-Emergencia',
     live_url: null,
-    image: 'https://placehold.co/800x400/1f2937/10b981?text=Rutas+de+Emergencia',
+    image: '/rutas-emergencia.png',
   },
   'bi-emisiones-gei-peru': {
     title: 'BI — Emisiones de Gases de Efecto Invernadero en Perú',

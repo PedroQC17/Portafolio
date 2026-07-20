@@ -26,7 +26,7 @@ const projects = [
     title: 'Sistema de Rutas de Emergencia para Ambulancias',
     description:
       'Sistema inteligente de búsqueda de rutas óptimas para ambulancias en Lima Metropolitana, comparando BFS, Dijkstra y A* sobre grafos viales reales de OpenStreetMap. Considera 51 hospitales en 16 distritos.',
-    image: 'https://placehold.co/600x400/1f2937/10b981?text=Rutas+de+Emergencia',
+    image: '/rutas-emergencia.png',
     technologies: ['Python', 'BFS', 'Dijkstra', 'A*', 'OpenStreetMap'],
     github_url: 'https://github.com/PedroQC17/Sistema-de-Rutas-de-Emergencia',
     live_url: null,

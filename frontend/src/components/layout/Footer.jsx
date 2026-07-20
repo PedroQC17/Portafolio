@@ -19,7 +19,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/pedro-quincho-cordova-5b437821b"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-emerald-400 transition-colors"
