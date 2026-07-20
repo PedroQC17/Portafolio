@@ -59,11 +59,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-DATABASE_URL = os.environ.get('DATABASE_URL', '')
+DATABASE_URL = os.environ.get('DATABASE_URL', '').strip()
 
 if DATABASE_URL and DATABASE_URL.startswith('postgres'):
     DATABASES = {
         'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600, conn_health_checks=True)
+    }
+    DATABASES['default']['OPTIONS'] = {
+        'options': '-c search_path=portafolio,public'
     }
 else:
     DATABASES = {
@@ -72,10 +75,6 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-
-DATABASES['default']['OPTIONS'] = {
-    'options': '-c search_path=portafolio,public'
-}
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
