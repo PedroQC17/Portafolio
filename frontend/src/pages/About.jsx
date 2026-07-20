@@ -1,3 +1,28 @@
+const technicalSkills = [
+  'Python', 'Java', 'C++', 'JavaScript',
+  'React', 'Django', 'Docker', 'Git / GitHub',
+  'Apache Spark', 'Power BI', 'Pentaho',
+  'MySQL', 'SQL Server', 'PostgreSQL',
+];
+
+const softSkills = [
+  'Trabajo en equipo',
+  'Comunicación efectiva',
+  'Adaptabilidad',
+  'Resolución de problemas',
+];
+
+const courses = [
+  'Desarrollo Web',
+  'Bases de Datos',
+  'Inteligencia de Negocios',
+  'Big Data',
+  'Arquitectura de Computadoras',
+  'Análisis y Diseño de Sistemas',
+  'Modelos de Simulación',
+  'Diseño de Interfaces',
+];
+
 export default function About() {
   return (
     <section className="max-w-4xl mx-auto px-4 py-16 md:py-24">
@@ -8,18 +33,18 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-10">
         <div className="space-y-4 text-gray-300 leading-relaxed">
           <p>
-            Soy desarrollador Full Stack con experiencia construyendo aplicaciones web
-            desde el backend hasta el frontend. Me apasiona escribir código limpio,
-            resolver problemas complejos y aprender nuevas tecnologías.
+            Soy Pedro Quincho, estudiante de Ingeniería de Sistemas en la
+            Universidad Nacional Mayor de San Marcos, cursando el 8vo ciclo.
           </p>
           <p>
-            Trabajo principalmente con Django REST Framework en el backend y React
-            en el frontend, siempre enfocado en crear experiencias de usuario
-            fluidas y sistemas robustos.
+            Me he formado en desarrollo web, bases de datos, inteligencia de
+            negocios y big data. Disfruto construir sistemas backend robustos
+            con Django y Python, así como interfaces modernas con React.
           </p>
           <p>
-            Cuando no estoy programando, disfruto explorar nuevas herramientas,
-            contribuir a proyectos open source y compartir conocimiento.
+            Busco una práctica pre-profesional donde pueda aportar mis
+            conocimientos técnicos y seguir aprendiendo en un entorno real
+            de trabajo.
           </p>
         </div>
 
@@ -29,10 +54,7 @@ export default function About() {
               Habilidades técnicas
             </h3>
             <div className="flex flex-wrap gap-2">
-              {[
-                'Python', 'Django', 'DRF', 'JavaScript', 'React', 'TypeScript',
-                'Tailwind CSS', 'PostgreSQL', 'MySQL', 'Git', 'Docker', 'Linux',
-              ].map((skill) => (
+              {technicalSkills.map((skill) => (
                 <span
                   key={skill}
                   className="bg-gray-800 text-gray-300 text-sm px-3 py-1 rounded-full"
@@ -45,11 +67,47 @@ export default function About() {
 
           <div>
             <h3 className="text-emerald-400 font-semibold text-sm uppercase tracking-wider mb-2">
+              Habilidades blandas
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {softSkills.map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-gray-800 text-emerald-300 text-sm px-3 py-1 rounded-full"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-emerald-400 font-semibold text-sm uppercase tracking-wider mb-2">
               Educación
             </h3>
             <div className="text-gray-300 space-y-1">
-              <p className="font-medium text-white">Aquí va tu título / carrera</p>
-              <p className="text-sm text-gray-400">Institución — Año</p>
+              <p className="font-medium text-white">
+                Ingeniería de Sistemas
+              </p>
+              <p className="text-sm text-gray-400">
+                Universidad Nacional Mayor de San Marcos — 8vo ciclo
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-emerald-400 font-semibold text-sm uppercase tracking-wider mb-2">
+              Cursos relevantes
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {courses.map((course) => (
+                <span
+                  key={course}
+                  className="bg-gray-800/50 text-gray-500 text-xs px-2 py-0.5 rounded border border-gray-800"
+                >
+                  {course}
+                </span>
+              ))}
             </div>
           </div>
         </div>

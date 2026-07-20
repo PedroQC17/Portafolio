@@ -14,8 +14,8 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-900 text-white sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold tracking-tight">
-          Pedro
+        <Link to="/" className="text-xl font-bold tracking-tight hover:text-emerald-400 transition-colors">
+          Pedro Quincho
         </Link>
 
         <button

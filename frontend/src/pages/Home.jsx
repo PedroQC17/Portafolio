@@ -1,13 +1,29 @@
 import { Link } from 'react-router-dom';
 
+const skillCards = [
+  {
+    title: 'Lenguajes',
+    items: 'Python, Java, C++, JavaScript',
+  },
+  {
+    title: 'Frameworks / Herramientas',
+    items: 'React, Docker, Git, Spark, Power BI, Pentaho',
+  },
+  {
+    title: 'Bases de datos',
+    items: 'MySQL, SQL Server, PostgreSQL',
+  },
+];
+
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center text-center px-4 py-24 md:py-36">
       <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
-        Hola, soy <span className="text-emerald-400">Pedro</span>
+        Hola, soy <span className="text-emerald-400">Pedro Quincho</span>
       </h1>
-      <p className="text-xl md:text-2xl text-gray-400 max-w-xl mb-8">
-        Desarrollador Full Stack apasionado por crear soluciones web eficientes y escalables.
+      <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mb-8">
+        Estudiante de Ingeniería de Sistemas en la UNMSM. Apasionado por el
+        desarrollo web, bases de datos, inteligencia de negocios y big data.
       </p>
 
       <div className="flex gap-4 flex-wrap justify-center">
@@ -26,14 +42,13 @@ export default function Home() {
       </div>
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl w-full">
-        {[
-          { title: 'Backend', items: 'Django, DRF, PostgreSQL' },
-          { title: 'Frontend', items: 'React, Tailwind, Next.js' },
-          { title: 'Herramientas', items: 'Git, Docker, Linux' },
-        ].map((col) => (
-          <div key={col.title} className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-            <h3 className="text-emerald-400 font-semibold mb-2">{col.title}</h3>
-            <p className="text-gray-400 text-sm">{col.items}</p>
+        {skillCards.map((card) => (
+          <div
+            key={card.title}
+            className="bg-gray-900 rounded-xl p-6 border border-gray-800"
+          >
+            <h3 className="text-emerald-400 font-semibold mb-2">{card.title}</h3>
+            <p className="text-gray-400 text-sm">{card.items}</p>
           </div>
         ))}
       </div>
