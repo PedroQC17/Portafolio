@@ -1,8 +1,11 @@
 import os
 import dj_database_url
+from dotenv import load_dotenv
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(BASE_DIR / '.env')
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-change-me-in-production-xyz123')
 
@@ -62,6 +65,10 @@ DATABASES = {
         conn_max_age=600,
         conn_health_checks=True,
     )
+}
+
+DATABASES['default']['OPTIONS'] = {
+    'options': '-c search_path=portafolio,public'
 }
 
 AUTH_PASSWORD_VALIDATORS = [
